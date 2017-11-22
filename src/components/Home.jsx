@@ -9,7 +9,8 @@ class Home extends Component {
     super()
     this.state ={
       box: '',
-      name: ''
+      name: '',
+      clicks: 0
     }
     this.handleChange = this.handleChange.bind(this);
     this.addName = this.addName.bind(this);

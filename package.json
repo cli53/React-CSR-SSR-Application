@@ -8,6 +8,7 @@
     "start-server-side": "webpack && babel-node server.js",
     "start-client": "webpack && node serverClient.js",
     "start-client-node": "node serverClient.js",
+    "start-SSR": "babel-node SSRserver.js",
     "webpack": "webpack -w --config webpack.config.js"
   },
   "keywords": [],

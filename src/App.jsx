@@ -20,8 +20,7 @@ class App extends Component {
           <Route exact path='/' render={() => <h1>Potatoes Potate</h1>} />
         </Switch>
         </div>
-
-  ]
+    ]
   }
 }
 
