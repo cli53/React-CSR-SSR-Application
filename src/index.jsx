@@ -4,9 +4,14 @@ import { Provider } from 'react-redux';
 import ReactDOM from 'react-dom';
 import App from './App.jsx';
 import { BrowserRouter } from 'react-router-dom';
+import store from './client.js';
 
-ReactDOM.hydrate((
+
+
+ReactDOM.render((
+<Provider store={store}>
 <BrowserRouter>
-<App />
+<App/>
 </BrowserRouter>
+</Provider>
 ), document.getElementById('root'));

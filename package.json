@@ -8,8 +8,8 @@
     "start-server-side": "webpack && babel-node server.js",
     "start-client": "webpack && node serverClient.js",
     "start-client-node": "node serverClient.js",
-    "start-SSR": "babel-node SSRserver.js",
-    "webpack": "webpack -w --config webpack.config.js"
+    "webpack": "webpack -w --config webpack.config.js",
+    "production": "webpack -p"
   },
   "keywords": [],
   "author": "",
@@ -20,6 +20,7 @@
     "babel-loader": "^7.1.2",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
     "css-loader": "^0.28.7",
     "express": "^4.16.2",
     "fs": "0.0.1-security",
@@ -30,6 +31,8 @@
     "react-router": "^4.2.0",
     "react-router-dom": "^4.2.2",
     "redux": "^3.7.2",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.2.0",
     "style-loader": "^0.19.0",
     "webpack": "^3.8.1",
     "webpack-dev-server": "^2.9.4"
