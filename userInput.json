@@ -1,6 +1,6 @@
 {
   "static": "dist",
-  "html": "./static/index.html",
+  "html": "./public/index.html",
   "component": "./src/App.jsx",
   "script": "start-big-booty",
   "servername": "bootySSR"

@@ -7,7 +7,8 @@ app.use(express.static('dist'));
 
 app.get('*', function (req, res) {
   console.log('hi')
-  res.sendFile(path.join(__dirname,'/static/index.html'));
+  res.set({'content-type': 'text/javascript'});
+  res.sendFile(path.join(__dirname,'/public/index.html'));
   // res.sendFile(path.join(__dirname, './static/index.html'));
 });
 

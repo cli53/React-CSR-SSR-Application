@@ -39,7 +39,7 @@ class App extends Component {
 
   render(){
     return [
-        <Routes
+        <Routes key={'routes'}
         addName={this.addName} 
         handleChange={this.handleChange} 
         // name={this.state.box}
