@@ -5,8 +5,6 @@ import Nav from './components/Nav.jsx';
 import Home from './components/Home.jsx';
 import About from './components/About.jsx';
 
-
-
 export const Routes = ({ addName, handleChange, name, handleClick, clicks}) => [
   <div className='headerNav'>
   {/* <ErrorBoundary> */}

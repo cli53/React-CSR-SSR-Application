@@ -1,5 +1,6 @@
 const path = require('path');
 const webpack = require('webpack');
+const SWPrecacheWebpackPlugin = require('sw-precache-webpack-plugin');
 
 module.exports = {
   entry: {
@@ -16,10 +17,25 @@ module.exports = {
       exclude: /node_modules/
     },
     {
-      test:/\css$/,
-      loader: ['style-loader!css-loader'],
+      test:/\.css$/,
+      loader: ['style-loader','css-loader', 'sass-loader'],
       exclude: /node_modules/
     }
   ]
-  }
+  },
+  devtool: 'source-map',
+  plugins: [
+    new SWPrecacheWebpackPlugin(
+      {
+        cacheIde: 'my-app',
+        filename: 'my-service-worker.js',
+        minify: true,
+        verbose: true,
+      }
+    ),
+    new webpack.optimize.ModuleConcatenationPlugin(),
+    new webpack.DefinePlugin({
+      'process.env.NODE_ENV': JSON.stringify('production'),
+    }),
+  ]
 }

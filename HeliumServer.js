@@ -1,5 +1,5 @@
 
-import App from './src/App.jsx';
+import App from './src/index.jsx';
 import reducer from './src/reducer.js';
 const express = require('express');
 const helium = require('helium.js');
