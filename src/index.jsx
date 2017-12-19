@@ -6,10 +6,11 @@ import { BrowserRouter } from 'react-router-dom';
 import { createStore } from 'redux';
 import reducer from './reducer.js';
 
-const preloadedState = window.__PRELOADED_STATE__
-delete window.__PRELOADED_STATE__
+// const preloadedState = window.__PRELOADED_STATE__
+// delete window.__PRELOADED_STATE__
 
-const store = createStore(reducer, preloadedState)
+// const store = createStore(reducer, preloadedState)
+const store = createStore(reducer)
 
 
 ReactDOM.hydrate((
