@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Summary from './Summary.jsx';
 import Namebox from './Namebox.jsx';
 // import ErrorBoundary from './Error.jsx';

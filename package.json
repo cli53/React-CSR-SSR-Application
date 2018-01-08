@@ -9,7 +9,10 @@
     "start-client": "webpack && node serverClient.js",
     "webpack": "webpack -w --config webpack.config.js",
     "production": "webpack -p",
-    "start:helium": "babel-node HeliumServer.js"
+    "start:helium": "babel-node HeliumServer.js",
+    "helium:start": "nodemon HeliumServer.js --exec babel-node --presets env",
+    "helium:build": "webpack --config ./prod/helium.webpack.config.js",
+    "helium:serve": "node ./prod/HeliumServer.prod.js"
   },
   "keywords": [],
   "author": "",
@@ -18,6 +21,7 @@
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
